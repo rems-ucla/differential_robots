@@ -1,8 +1,7 @@
 from rems.robots import RobotBase
-from rems.device.Dynamixel.Dynamixel import Dynamixel
-from rems.device.state_estimator.ArucoDevice import ArucoDevice
-from rems.typing import DefDict
-from rems.utils import time_str
+from rems_diff_robots.device.Dynamixel.Dynamixel import Dynamixel
+from rems_diff_robots.device.ArucoDevice import ArucoDevice
+
 
 ID_LISTs = [2, 1]
 

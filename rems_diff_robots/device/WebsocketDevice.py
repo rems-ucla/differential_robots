@@ -2,9 +2,8 @@ import time
 
 from rems.device.DeviceBase import DeviceBase
 import websocket, struct
-from rems.typing.std.StdUnit import Pos, Vel, Ang, AngVel, AngAcc, UnitType, Percent
-from rems.typing import DefDict
-from rems.utils import tictoc
+from defdict.StdUnit import Pos, Vel, Ang, AngVel, AngAcc, UnitType, Percent
+from defdict import DefDict
 
 TARGET = "ws://192.168.4.1:81"
 # ESP_00111404

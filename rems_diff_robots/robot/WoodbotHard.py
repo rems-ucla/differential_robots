@@ -1,11 +1,7 @@
 from rems.robots import RobotBase
-from rems.device.connect.WifiDevice import WifiDevice
-from rems.device.connect.WebsocketDevice import WebsocketDevice
-from rems.device.state_estimator.ArucoDevice import ArucoDevice
-from rems.utils import time_str
-import websocket, struct
-from rems.typing.std.StdUnit import Pos, Vel, Ang, AngVel, AngAcc, UnitType, Percent
-from rems.typing import DefDict
+from rems_diff_robots.device.WebsocketDevice import WebsocketDevice
+from defdict.StdUnit import Pos, Vel, Ang, AngVel, AngAcc, UnitType, Percent
+from defdict import DefDict
 TARGET = "ws://192.168.4.1:81"
 
 

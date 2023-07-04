@@ -1,8 +1,8 @@
 from  pycreate2 import Create2
 import time
 from rems.device import DriveBase, SenseBase
-from rems.typing import DefDict
-from rems.typing.std.StdUnit import Count, Pos, Vel
+from defdict import DefDict
+from defdict.StdUnit import Count, Pos, Vel
 from rems.utils import tictoc
 
 class CountVel(Count):

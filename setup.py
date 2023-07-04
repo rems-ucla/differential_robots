@@ -9,7 +9,7 @@ def read(rel_path):
         return fp.read()
 
 def get_metadata(field):
-    rel_path = "rems-diff-robots/__init__.py"
+    rel_path = "rems_diff_robots/__init__.py"
     for line in read(rel_path).splitlines():
         if line.startswith(f'__{field}__'):
             delim = '"' if '"' in line else "'"
@@ -27,7 +27,7 @@ def get_version_and_cmdclass(pkg_path):
     spec.loader.exec_module(module)
     return module.__version__, module.get_cmdclass(pkg_path)
 
-version, cmdclass = get_version_and_cmdclass('rems-diff-robots')
+version, cmdclass = get_version_and_cmdclass('rems_diff_robots')
 
 
 with open('requirements.txt') as f:
@@ -41,7 +41,7 @@ setup(
     url=get_metadata("url"),
     author=get_metadata('author'),
     license='LGPLv3',
-    packages=find_packages(include=['rems-diff-robots', 'rems-diff-robots.*']),
+    packages=find_packages(include=['rems_diff_robots', 'rems_diff_robots.*']),
     install_requires=requirements,
     classifiers=[
         'Development Status :: 4 - Beta',

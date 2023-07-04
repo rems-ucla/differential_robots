@@ -1,7 +1,6 @@
 from rems.robots import RobotBase
-from rems.device.iRobot.Create2Device import Create2Device
-from rems.typing import DefDict
-from rems.utils import time_str
+from rems_diff_robots.device.Create2Device import Create2Device
+
 
 
 class CreateHard(RobotBase):

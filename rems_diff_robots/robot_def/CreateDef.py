@@ -1,10 +1,10 @@
-from rems.robot_def.webots import DifferentialDriveDef
-from rems.robot_def.webots.DifferentialDriveDef import rule_to_nested_vel
-from rems.typing.std.StdUnit import Pos, Vel, Ang, AngVel, AngAcc, UnitType, Percent
-from rems.robots.differential_drive.CreateHard import CreateHard
-from rems.robots.differential_drive.DynabotHard import DynabotHard
-from rems.robots.differential_drive.WoodbotHard import WoodbotHard
-from rems.typing import MapRule, DefDict
+from rems_diff_robots import DifferentialDriveDef
+from rems_diff_robots.robot_def.DifferentialDriveDef import rule_to_nested_vel
+from defdict.StdUnit import Pos, Vel, Ang, AngVel, AngAcc, UnitType, Percent
+from rems_diff_robots.robot.CreateHard import CreateHard
+from rems_diff_robots.robot.DynabotHard import DynabotHard
+from rems_diff_robots.robot.WoodbotHard import WoodbotHard
+from defdict import MapRule, DefDict
 
 # sensor names and definitoins
 

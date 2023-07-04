@@ -1,3 +1,5 @@
+from .robot_def.DifferentialDriveDef import DifferentialDriveDef
+from .robot import *
 
 
 __author__ = 'UCLA LEMUR'
